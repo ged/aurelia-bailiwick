@@ -4,7 +4,8 @@
   "description": "Aurelia adapters for the Bailiwick domain model toolkit",
   "author": "Michael Granger",
   "license": "BSD-3-Clause",
-  "main": "dist/system/index",
+  "main": "index",
+  "registry": "jspm",
   "homepage": "https://github.com/ged/aurelia-bailiwick#readme",
   "scripts": {
     "postinstall": "jspm install",
@@ -13,8 +14,8 @@
     "lint": "eslint src"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ged/aurelia-bailiwick.git"
+    "type": "hg",
+    "url": "https://bitbucket.org/ged/aurelia-bailiwick"
   },
   "keywords": [
     "bailiwick",
@@ -22,25 +23,22 @@
     "observer",
     "custom-tag"
   ],
-  "jspm": {
-    "main": "index",
-    "format": "register",
-    "directories": {
-      "lib": "dist/system"
-    },
-    "dependencies": {
-      "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.2.2",
-      "bailiwick": "github:ged/bailiwick@master"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.21",
-      "babel-runtime": "npm:babel-runtime@^5.8.20",
-      "core-js": "npm:core-js@^1.0.0"
-    }
+  "format": "es6",
+  "directories": {
+    "lib": "src"
+  },
+  "dependencies": {
+    "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.2.2",
+    "babel-runtime": "npm:babel-runtime@^5.8.20",
+  },
+  "peerDependencies": {
+    "bailiwick": "github:ged/bailiwick@master"
   },
   "devDependencies": {
+    "babel": "npm:babel-core@^5.8.21",
     "babel-eslint": "^4.1.3",
     "conventional-changelog": "^0.5.1",
+    "core-js": "npm:core-js@^1.0.0",
     "del": "^2.0.2",
     "eslint": "^1.7.3",
     "gulp": "^3.9.0",
@@ -58,5 +56,4 @@
     "vinyl-paths": "^2.0.0",
     "yargs": "^3.29.0"
   },
-  "dependencies": {}
 }

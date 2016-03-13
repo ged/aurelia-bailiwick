@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.2.2",
-    "babel-runtime": "npm:babel-runtime@^5.8.20",
+    "babel-runtime": "npm:babel-runtime@^5.8.20"
   },
   "peerDependencies": {
     "bailiwick": "github:ged/bailiwick@master"
@@ -55,5 +55,5 @@
     "run-sequence": "^1.1.4",
     "vinyl-paths": "^2.0.0",
     "yargs": "^3.29.0"
-  },
+  }
 }
